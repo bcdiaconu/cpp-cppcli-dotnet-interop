@@ -16,7 +16,7 @@ namespace CsLibrary
         public static int Add(int arg1, int arg2)
             => arg1 + arg2;
 
-        public static float Add(float arg1, float arg2)
+        public static double Add(double arg1, double arg2)
             => arg1 + arg2;
 
         public static string Concat(string arg1, string arg2)
