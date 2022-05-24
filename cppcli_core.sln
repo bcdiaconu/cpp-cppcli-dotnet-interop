@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.181
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreClassLib", "CoreClassLib\CoreClassLib.vcxproj", "{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client_app", "client_app\client_app.vcxproj", "{60F348B4-329E-43E2-8EAC-B4FE6A28B9BE}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2} = {7A181B4B-2B9A-4EDB-A449-FA61E38386D2}
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpApp", "CSharpApp\CSharpApp.csproj", "{98530CEE-772B-46CC-9256-EA098FFD46EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpApp", "CSharpApp\CSharpApp.csproj", "{98530CEE-772B-46CC-9256-EA098FFD46EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppCliWrapper", "CppCliWrapper\CppCliWrapper.vcxproj", "{6724F880-8F82-4635-8D47-B7BCADAD85EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,16 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Debug|x64.ActiveCfg = Debug|x64
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Debug|x64.Build.0 = Debug|x64
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Debug|x86.ActiveCfg = Debug|Win32
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Debug|x86.Build.0 = Debug|Win32
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Release|Any CPU.ActiveCfg = Release|Win32
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Release|x64.ActiveCfg = Release|x64
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Release|x64.Build.0 = Release|x64
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Release|x86.ActiveCfg = Release|Win32
-		{7A181B4B-2B9A-4EDB-A449-FA61E38386D2}.Release|x86.Build.0 = Release|Win32
 		{60F348B4-329E-43E2-8EAC-B4FE6A28B9BE}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{60F348B4-329E-43E2-8EAC-B4FE6A28B9BE}.Debug|x64.ActiveCfg = Debug|x64
 		{60F348B4-329E-43E2-8EAC-B4FE6A28B9BE}.Debug|x64.Build.0 = Debug|x64
@@ -54,6 +41,18 @@ Global
 		{98530CEE-772B-46CC-9256-EA098FFD46EA}.Release|x64.Build.0 = Release|Any CPU
 		{98530CEE-772B-46CC-9256-EA098FFD46EA}.Release|x86.ActiveCfg = Release|Any CPU
 		{98530CEE-772B-46CC-9256-EA098FFD46EA}.Release|x86.Build.0 = Release|Any CPU
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|Any CPU.Build.0 = Debug|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|x64.ActiveCfg = Debug|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|x64.Build.0 = Debug|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Debug|x86.Build.0 = Debug|Win32
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|Any CPU.ActiveCfg = Release|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|Any CPU.Build.0 = Release|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|x64.ActiveCfg = Release|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|x64.Build.0 = Release|x64
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|x86.ActiveCfg = Release|Win32
+		{6724F880-8F82-4635-8D47-B7BCADAD85EC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
