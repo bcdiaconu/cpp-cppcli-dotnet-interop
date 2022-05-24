@@ -6,8 +6,9 @@
 
 int main()
 {
-    CalculatorWrapper widget(13.45, 4675.3);
-    std::cout << "14 + 39 = " << widget.Add(14,39) << std::endl;
-    std::cout << "45.6 + 467.64 = " << widget.Add(45.6, 467.64) << std::endl;
-    std::cout << "NonStaticAdd = " << widget.NonStaticAdd() << std::endl;
+    CalculatorWrapper calculatorWrapper(13.45, 4675.3);
+    std::cout << "14 + 39 = " << calculatorWrapper.Add(14,39) << std::endl;
+    std::cout << "45.6 + 467.64 = " << calculatorWrapper.Add(45.6, 467.64) << std::endl;
+    std::cout << "NonStaticAdd = " << calculatorWrapper.NonStaticAdd() << std::endl;
+    std::cout << "ConcatStrings = " << calculatorWrapper.Concat("String1", "string2");
 }
