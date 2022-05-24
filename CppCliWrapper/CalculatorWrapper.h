@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 #ifdef DLL_EXPORT
 #define DLL_API __declspec(dllexport)
@@ -19,6 +20,6 @@ public:
    int Add(int arg1, int arg2);
    double Add(double arg1, double arg2);
    double NonStaticAdd();
-   //std::string Concat(string arg1, string arg2)
+   //std::string Concat(std::string arg1, std::string arg2);
 };
 

@@ -6,17 +6,15 @@ using namespace System::Runtime::CompilerServices;
 using namespace System::Runtime::InteropServices;
 using namespace System::Security::Permissions;
 
-[assembly:AssemblyTitleAttribute(L"CoreClassLib")];
+[assembly:AssemblyTitleAttribute(L"CppCliWrapper")];
 [assembly:AssemblyDescriptionAttribute(L"")];
 [assembly:AssemblyConfigurationAttribute(L"")];
-[assembly:AssemblyCompanyAttribute(L"")];
-[assembly:AssemblyProductAttribute(L"CoreClassLib")];
-[assembly:AssemblyCopyrightAttribute(L"Copyright (c)  2019")];
+[assembly:AssemblyCompanyAttribute(L"KLA Corp.")];
+[assembly:AssemblyProductAttribute(L"CppCliWrapper")];
+[assembly:AssemblyCopyrightAttribute(L"Copyright (c) KLA Corp. 2022")];
 [assembly:AssemblyTrademarkAttribute(L"")];
 [assembly:AssemblyCultureAttribute(L"")];
 
-[assembly:AssemblyVersionAttribute("1.0.*")];
+[assembly:AssemblyVersionAttribute(L"1.0.*")];
 
 [assembly:ComVisible(false)];
-
-[assembly:CLSCompliantAttribute(true)];
