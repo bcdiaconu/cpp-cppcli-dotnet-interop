@@ -14,12 +14,12 @@ class DLL_API CalculatorWrapper
    CalculatorPimpl* pimpl;   
 
 public:
-   CalculatorWrapper(double fpNum1, double fpNum2);
+   CalculatorWrapper(const double& fpNum1, const double& fpNum2);
    ~CalculatorWrapper();
 
-   int Add(int arg1, int arg2);
-   double Add(double arg1, double arg2);
-   double NonStaticAdd();
-   //std::string Concat(std::string arg1, std::string arg2);
+   int Add(const int& arg1, const int& arg2) const;
+   double Add(const double& arg1, const double& arg2) const;
+   double NonStaticAdd() const;
+   std::string Concat(const std::string& arg1, const std::string& arg2) const;
 };
 

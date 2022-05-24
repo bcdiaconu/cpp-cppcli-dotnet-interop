@@ -34,22 +34,22 @@ private:
     }
 
 public:
-   CalculatorPimpl(double fpNum1, double fpNum2)
+   CalculatorPimpl(const double& fpNum1, const double& fpNum2)
       :_calculator(gcnew CsLibrary::Calculator(fpNum1, fpNum2))
    {
    }
 
-   int Add(int arg1, int arg2)
+   int Add(const int& arg1, const int& arg2) const
    {
       return _calculator->Add(arg1, arg2);
    }
 
-   double Add(double arg1, double arg2)
+   double Add(const double& arg1, const double& arg2) const
    {
        return _calculator->Add(arg1, arg2);
    }
 
-   double NonStaticAdd()
+   double NonStaticAdd() const
    {
        return _calculator->NonStaticAdd();
    }
@@ -66,7 +66,7 @@ public:
 
 };
 
-CalculatorWrapper::CalculatorWrapper(double fpNum1, double fpNum2)
+CalculatorWrapper::CalculatorWrapper(const double& fpNum1, const double& fpNum2)
    :pimpl(new CalculatorPimpl(fpNum1, fpNum2))
 {
 }
@@ -76,17 +76,17 @@ CalculatorWrapper::~CalculatorWrapper()
    delete pimpl;
 }
 
-int CalculatorWrapper::Add(int arg1, int arg2)
+int CalculatorWrapper::Add(const int& arg1, const int& arg2) const
 {
    return pimpl->Add(arg1, arg2);
 }
 
-double CalculatorWrapper::Add(double arg1, double arg2)
+double CalculatorWrapper::Add(const double& arg1, const double& arg2) const
 {
     return pimpl->Add(arg1, arg2);
 }
 
-double CalculatorWrapper::NonStaticAdd()
+double CalculatorWrapper::NonStaticAdd() const
 {
     return pimpl->NonStaticAdd();
 }
