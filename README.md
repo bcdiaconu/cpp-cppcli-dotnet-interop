@@ -34,3 +34,5 @@ To find the necessary namespaces and classes, references to `CppCliWrapper` shou
 ## References
 
 [Cpp Dot Net Data Types Marshaling](https://docs.microsoft.com/en-us/cpp/dotnet/overview-of-marshaling-in-cpp?view=msvc-170)
+[Interop through COM objects](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/runtime-callable-wrapper)
+[Interop through COM objects sample](https://github.com/dotnet/samples/blob/main/core/interop/comwrappers/IDispatch/ComWrappersImpl.cs)
