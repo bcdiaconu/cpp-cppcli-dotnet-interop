@@ -53,6 +53,17 @@ public:
    {
        return _calculator->NonStaticAdd();
    }
+
+   std::string Concat(const std::string&  arg1, const std::string& arg2) const
+   {
+       auto managedArg1 = mapStdToSystemString(arg1);
+       auto managedArg2 = mapStdToSystemString(arg2);
+
+       auto managedResultString = _calculator->Concat(managedArg1, managedArg2);
+
+       return mapSystemToStdString(managedResultString);
+   }
+
 };
 
 CalculatorWrapper::CalculatorWrapper(double fpNum1, double fpNum2)
@@ -78,4 +89,9 @@ double CalculatorWrapper::Add(double arg1, double arg2)
 double CalculatorWrapper::NonStaticAdd()
 {
     return pimpl->NonStaticAdd();
+}
+
+std::string CalculatorWrapper::Concat(const std::string& arg1, const std::string& arg2) const
+{
+    return pimpl->Concat(arg1, arg2);
 }
