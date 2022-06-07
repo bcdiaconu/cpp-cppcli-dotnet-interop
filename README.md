@@ -31,8 +31,13 @@ To find the necessary namespaces and classes, references to `CppCliWrapper` shou
 4. Goto `Linker`/`Input`
 5. In `Additional Dependencies` append `CppCliWrapper.lib` at the end of the list
 
+### Important
+
+The header `.h` or `.hpp` should be free of managed code or includes of managed headers (eg: `msclr/auto_gcroot.h` or `vcclr.h`). In the header only forward declarion of managed class should reside.  
+The managed code should exist only in the source `.cpp` files. Required managed header includes are to be added in these files, where also definitions reside.
+
 ## References
 
-[Cpp Dot Net Data Types Marshaling](https://docs.microsoft.com/en-us/cpp/dotnet/overview-of-marshaling-in-cpp?view=msvc-170)
-[Interop through COM objects](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/runtime-callable-wrapper)
-[Interop through COM objects sample](https://github.com/dotnet/samples/blob/main/core/interop/comwrappers/IDispatch/ComWrappersImpl.cs)
+[Cpp Dot Net Data Types Marshaling](https://docs.microsoft.com/en-us/cpp/dotnet/overview-of-marshaling-in-cpp?view=msvc-170)  
+[Interop through COM objects](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/runtime-callable-wrapper)  
+[Interop through COM objects sample](https://github.com/dotnet/samples/blob/main/core/interop/comwrappers/IDispatch/ComWrappersImpl.cs)  
