@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CsLibrary
+﻿namespace CsLibrary
 {
     public class Calculator
     {

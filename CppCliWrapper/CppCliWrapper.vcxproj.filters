@@ -24,6 +24,9 @@
     <ClInclude Include="CalculatorWrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ApiDeclaration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
